@@ -1,0 +1,10 @@
+extends ../layout/base.pug
+
+block content 
+    form(action="/img", method="get") 
+        button 추가하기 버튼
+    each img in imgs 
+        div #{img.name}
+        div #{img.size}
+        div #{img.createdAt}
+        hr
